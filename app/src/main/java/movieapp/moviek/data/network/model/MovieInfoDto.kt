@@ -1,10 +1,8 @@
 package movieapp.moviek.data.network.model
 
-import androidx.room.Entity
 import com.google.gson.annotations.Expose
 import com.google.gson.annotations.SerializedName
 
-@Entity(tableName = "movie_info_list")
 data class MovieInfoDto(
 
     @SerializedName("backdrop_path")
