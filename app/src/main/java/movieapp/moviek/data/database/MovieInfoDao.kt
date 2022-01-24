@@ -15,5 +15,5 @@ interface MovieInfoDao {
     fun getMovieInfo(id: Int): LiveData<MovieDbModel>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun insertMovieList(movieList: List<MovieDbModel>)
+    fun insertMovieList(movieList: List<MovieDbModel>)
 }

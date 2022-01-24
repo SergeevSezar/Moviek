@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_movie_poster)
-        val disposable = ApiFactory.apiService.getTopRatedMovieList()
+        val disposable = ApiFactory.apiService.getPopularMovieList(page = 2)
             .subscribeOn(Schedulers.io())
             .observeOn(AndroidSchedulers.mainThread())
             .subscribe({

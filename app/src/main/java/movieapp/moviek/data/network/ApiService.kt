@@ -11,14 +11,14 @@ interface ApiService {
     fun getPopularMovieList(
         @Query(QUERY_PARAM_API_KEY) apiKey: String = "485fbc212ab76526edb2699c29b0657d",
         @Query(QUERY_PARAM_LANGUAGE) language: String = "ru-RU",
-        @Query(QUERY_PARAM_PAGE) page: Int = 1
+        @Query(QUERY_PARAM_PAGE) page: Int
     ): Single<MovieListDto>
 
     @GET("top_rated")
     fun getTopRatedMovieList(
         @Query(QUERY_PARAM_API_KEY) apiKey: String = "485fbc212ab76526edb2699c29b0657d",
         @Query(QUERY_PARAM_LANGUAGE) language: String = "ru-RU",
-        @Query(QUERY_PARAM_PAGE) page: Int = 1
+        @Query(QUERY_PARAM_PAGE) page: Int
     ): Single<MovieListDto>
 
     companion object{
