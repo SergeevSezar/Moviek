@@ -5,17 +5,9 @@ import com.google.gson.annotations.SerializedName
 
 data class MovieInfoDto(
 
-    @SerializedName("backdrop_path")
-    @Expose
-    val backdropPath: String,
-
     @SerializedName("id")
     @Expose
     val id: Int,
-
-    @SerializedName("original_language")
-    @Expose
-    val originalLanguage: String,
 
     @SerializedName("original_title")
     @Expose
@@ -28,6 +20,10 @@ data class MovieInfoDto(
     @SerializedName("poster_path")
     @Expose
     val posterPath: String,
+
+    @SerializedName("backdrop_path")
+    @Expose
+    val backdropPath: String,
 
     @SerializedName("release_date")
     @Expose

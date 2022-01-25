@@ -15,5 +15,4 @@ data class MovieDbModel(
     val releaseDate: String,
     val voteCount: Int,
     val voteAverage: Double,
-    val bigPosterPath: String
 )
