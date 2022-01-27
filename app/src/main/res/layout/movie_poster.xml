@@ -22,7 +22,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="ImageContrastCheck"
-        tools:src="@mipmap/ic_launcher"
+        tools:src="@drawable/astronaut"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
