@@ -6,22 +6,28 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="4dp"
-    tools:context=".presentation.MainActivity">
+    android:background="@color/black"
+    tools:context=".presentation.MovieListActivity">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_poster"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:background="@color/black"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintTop_toBottomOf="@id/switch_movie"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="SpeakableTextPresentCheck"
+        tools:listitem="@layout/movie_poster" />
 
     <androidx.appcompat.widget.SwitchCompat
         android:id="@+id/switch_movie"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:backgroundTint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -30,6 +36,7 @@
         android:id="@+id/tv_new"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="@+id/switch_movie"
         app:layout_constraintEnd_toStartOf="@+id/switch_movie"
         app:layout_constraintStart_toStartOf="parent"
@@ -41,6 +48,7 @@
         android:id="@+id/tv_popularity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="@+id/switch_movie"
         app:layout_constraintStart_toEndOf="@+id/switch_movie"
         app:layout_constraintEnd_toEndOf="parent"
