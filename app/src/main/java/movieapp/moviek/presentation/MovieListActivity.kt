@@ -9,13 +9,13 @@ import io.reactivex.rxjava3.schedulers.Schedulers
 import movieapp.moviek.R
 import movieapp.moviek.data.network.ApiFactory
 
-class MainActivity : AppCompatActivity() {
+class MovieListActivity : AppCompatActivity() {
 
     private val compositeDisposable = CompositeDisposable()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_movie_poster)
+        setContentView(R.layout.activity_movie_list)
         val disposable = ApiFactory.apiService.getPopularMovieList(page = 2)
             .subscribeOn(Schedulers.io())
             .observeOn(AndroidSchedulers.mainThread())
