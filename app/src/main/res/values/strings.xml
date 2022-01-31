@@ -1,4 +1,14 @@
 <resources>
     <string name="app_name">Moviek</string>
     <string name="movie_poster">movie_poster</string>
+    <string name="label_title">label_title</string>
+    <string name="textview_title">tv_title</string>
+    <string name="label_original_title">label_original_title</string>
+    <string name="textview_original_title">tv_original_title</string>
+    <string name="label_rating">label_rating</string>
+    <string name="textview_rating">tv_rating</string>
+    <string name="label_releaseDate">label_release_date</string>
+    <string name="textview_release_date">tv_release_date</string>
+    <string name="label_description">label_description</string>
+    <string name="textview_overview">tv_description</string>
 </resources>
