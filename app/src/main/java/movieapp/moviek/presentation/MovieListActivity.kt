@@ -11,24 +11,9 @@ import movieapp.moviek.data.network.ApiFactory
 
 class MovieListActivity : AppCompatActivity() {
 
-    private val compositeDisposable = CompositeDisposable()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_movie_list)
-        val disposable = ApiFactory.apiService.getPopularMovieList(page = 2)
-            .subscribeOn(Schedulers.io())
-            .observeOn(AndroidSchedulers.mainThread())
-            .subscribe({
-                Log.d("TEST", it.toString())
-            }, {
-                it.message?.let { it1 -> Log.d("TEST", it1) }
-            })
-        compositeDisposable.add(disposable)
-    }
-
-    override fun onDestroy() {
-        super.onDestroy()
-        compositeDisposable.dispose()
     }
 }
