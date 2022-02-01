@@ -37,11 +37,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/white"
+        android:text="@string/top_rating"
         app:layout_constraintBottom_toBottomOf="@+id/switch_movie"
         app:layout_constraintEnd_toStartOf="@+id/switch_movie"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/switch_movie"
-        tools:text="Новые"
         />
 
     <TextView
@@ -49,11 +49,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/white"
+        android:text="@string/popularity"
         app:layout_constraintBottom_toBottomOf="@+id/switch_movie"
         app:layout_constraintStart_toEndOf="@+id/switch_movie"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/switch_movie"
-        tools:text="Попоулярные"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

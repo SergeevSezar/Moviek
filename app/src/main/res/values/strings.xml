@@ -11,4 +11,6 @@
     <string name="textview_release_date">tv_release_date</string>
     <string name="label_description">label_description</string>
     <string name="textview_overview">tv_description</string>
+    <string name="top_rating">Рейтинговые</string>
+    <string name="popularity">Популярные</string>
 </resources>
