@@ -30,8 +30,9 @@ class MovieInfoAdapter(
             }
         }
     }
+
+    interface OnMoviePosterClickListener {
+        fun onClick(movieInfo: Movie)
+    }
 }
 
-interface OnMoviePosterClickListener {
-    fun onClick(movieInfo: Movie)
-}
